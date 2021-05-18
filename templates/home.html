@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Danish ML Project</title>
+    <style>
+        body{
+            background-image: url("https://image.freepik.com/free-photo/healthcare-medical-concept-world-diabetes-day-blue-background_53476-5109.jpg");
+            height: 100vh; 
+            
+            background-position: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @media (max-width:660){
+            h1{
+                font-size: 20px;
+            }
+            .about{
+                width: 40px;
+                height: 100px;
+            }
+        }
+        .btn{
+            background-color: red;
+            color: white;
+            width: 20%;
+            height: 15%;
+            animation: skew 3s infinite;
+            transform: skew(10deg);
+            animation-direction: alternate;
+            
+        }
+        @keyframes skew {
+            0% {
+                transform: skew(10deg, 10deg);
+            }
+            100% {
+                transform: skew(-10deg, -10deg);
+            }
+        }
+        h1{
+            font-size: 40px;
+        }
+        .btn:hover {
+            background-color: black;
+            color: white;
+            width: 40%;
+            height: 25%;
+
+        }
+        .btn:hover a{
+            color: white;
+        }
+        .main >h1{
+            color: black;
+            font-size: 320%;
+            font-weight: 400;
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .main{
+            border: 4px solid black;
+            width: 80%;
+            border-radius: 50%;
+            border-bottom: none;
+             
+        }
+        span{
+            font-size: 60px;
+            color: red;
+        }
+        .about{
+            width: 25%;
+            height: 50%;
+            float: left;
+            border: red solid 2px;
+            border-top-left-radius: 20%;
+            border-bottom-right-radius: 20%;
+            color: white;
+            background-color: black;
+        }
+        .info{
+            float: right;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-top-right-radius: 20%;
+            border-bottom-left-radius: 20%;
+            width: 240px;
+        }
+        .link{
+            background-color: white;
+            color: black;
+            
+        }
+    </style>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfDjtXf7gzo0hWNW-d676GaY-tNHy1hIaAQ&usqp=CAU">
+  </head>
+  <body>
+      <center>
+          <div class="main">
+            <h1>Welcome<br>To Diabetes Prediction <br>Presented By <span>Mashhood Ahmad Danish</span></h1>
+            <div class="btn">
+                <h1><a href={% url 'predict' %}>Predict</a></h1>
+            </div>
+          </div>
+          <div class="about">
+            <h2>This is a Mini Project of Machine Learning Algorithm, in which a heavy large datasets of diabetic/non-diabetic patients is being trained
+                to our Machine so that it would predict the final result wether a person is diabetic or not .
+            </h2>
+          </div>
+          <div class="info">
+                <h3>Visit my portfolio and know more about my projects</h3>
+                <h2>👇</h2>
+              <h1><a class="btn" href="https://portfolio-danish.web.app/" target="_danish">My PortFolio</a></h1>
+          </div>
+        
+      </center>
+    
+  </body>
+</html>
